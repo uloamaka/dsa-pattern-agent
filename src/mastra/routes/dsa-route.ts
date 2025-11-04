@@ -1,7 +1,7 @@
 import { registerApiRoute } from "@mastra/core/server";
 import { randomUUID } from "crypto";
 
-export const dsaAgentRoute = registerApiRoute("/a2a/agent/", {
+export const dsaAgentRoute = registerApiRoute("/a2a/agent/:agentId", {
   method: "POST",
 
   handler: async (c) => {
